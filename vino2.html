@@ -26,8 +26,15 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            position: fixed; /* Fissa l'header */
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Assicura che l'header rimanga sopra il resto del contenuto */
         }
-
+        .container {
+            padding-top: 100px; /* Aggiunge spazio per evitare che il contenuto venga nascosto dall'header */
+        }
+        
         header h1 {
             margin: 0;
             font-size: 2.5em;
