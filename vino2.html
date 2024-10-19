@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrizione dei vini prodotti da [Nome Azienda]">
+    <title>[Nome Vino] - [Nome Azienda]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .wine-image {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px 0;
+        }
+
+        .wine-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .wine-info {
+            flex: 1;
+        }
+
+        .wine-info h2 {
+            margin-top: 0;
+        }
+
+        .wine-info p {
+            line-height: 1.6;
+        }
+
+        .wine-specs {
+            background-color: #eee;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .wine-specs h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>[Nome del Vino]</h1>
+    </header>
+
+    <div class="container">
+        <div class="wine-details">
+            <div class="wine-info">
+                <h2>Descrizione</h2>
+                <p>[Breve descrizione del vino, es. "Un vino rosso corposo con aromi di frutta matura e note speziate."]</p>
+                
+                <h2>Caratteristiche</h2>
+                <p>Annata: [Annata del vino]</p>
+                <p>Gradazione alcolica: [Gradazione]</p>
+                <p>Vitigni: [Tipi di vitigni utilizzati]</p>
+                <p>Zona di produzione: [Regione o area di produzione]</p>
+            </div>
+            <div class="wine-info">
+                <img class="wine-image" src="[URL immagine bottiglia]" alt="[Nome del vino]">
+            </div>
+        </div>
+
+        <div class="wine-specs">
+            <h3>Scheda Tecnica</h3>
+            <ul>
+                <li>Temperatura di servizio: [Temperatura]</li>
+                <li>Abbinamenti consigliati: [Abbinamenti con cibi]</li>
+                <li>Affinamento: [Processo di affinamento, es. "In botti di rovere per 12 mesi"]</li>
+                <li>Formato: [Es. "Bottiglia 750 ml"]</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 [Nome Azienda] - Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
