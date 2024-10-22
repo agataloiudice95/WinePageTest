@@ -1,76 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vino 1 - [Nome del vino]</title>
+    <title>Valori Nutrizionali Vino 1</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            background-color: #000;
-            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
         }
-        .banner {
-            width: 100%;
-            height: 300px;
-            background-image: url('banner-vino1.jpg'); /* Cambia con il banner del vino */
-            background-size: cover;
-            background-position: center;
+        h1 {
+            text-align: center;
+            color: #333;
         }
-        .content {
-            display: flex;
-            padding: 40px;
-            max-width: 1200px;
+        table {
+            width: 60%;
             margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #fff;
         }
-        .wine-image {
-            flex: 1;
-            padding-right: 20px;
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
         }
-        .wine-image img {
-            width: 100%;
-            border-radius: 10px;
+        th {
+            background-color: #f2f2f2;
         }
-        .wine-details {
-            flex: 1;
-            padding-left: 20px;
-        }
-        h2 {
-            color: #d4af37;
-            font-size: 28px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
-            background-color: #333;
-            padding: 10px;
-            border-radius: 5px;
+        tr:hover {
+            background-color: #f1f1f1;
         }
     </style>
 </head>
 <body>
 
-    <div class="banner"></div>
+    <h1>Valori Nutrizionali Vino 1</h1>
 
-    <div class="content">
-        <div class="wine-image">
-            <img src="vino1-bottiglia.jpg" alt="Vino 1"> <!-- Immagine della bottiglia -->
-        </div>
-        <div class="wine-details">
-            <h2>Vino 1 - [Nome del vino]</h2>
-            <h3>Caratteristiche:</h3>
-            <ul>
-                <li>Gradazione alcolica: 13%</li>
-                <li>Anno: 2020</li>
-                <li>Varietà di uva: [Nome dell'uva]</li>
-                <li>Regione: [Regione]</li>
-            </ul>
-        </div>
-    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Proprietà</th>
+                <th>Valore per 100ml</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Energia</td>
+                <td>85 kcal</td>
+            </tr>
+            <tr>
+                <td>Carboidrati</td>
+                <td>0,9 g</td>
+            </tr>
+            <tr>
+                <td>Zuccheri</td>
+                <td>0,6 g</td>
+            </tr>
+            <tr>
+                <td>Proteine</td>
+                <td>0 g</td>
+            </tr>
+            <tr>
+                <td>Grassi</td>
+                <td>0 g</td>
+            </tr>
+            <tr>
+                <td>Sale</td>
+                <td>0 g</td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>
