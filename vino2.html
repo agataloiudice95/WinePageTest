@@ -1,155 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descrizione dei vini prodotti da [Nome Azienda]">
-    <title>[Nome Vino] - [Nome Azienda]</title>
+    <title>Valori Nutrizionali Vino 2</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            min-height: 100vh; /* Fa sì che il body prenda almeno tutta l'altezza della finestra */
-            padding-bottom: 60px; /* Aggiungi un padding per lasciare spazio al footer */
+            margin: 20px;
+            background-color: #f9f9f9;
         }
-
-        .container {
-            max-width: 1200px;
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 60%;
             margin: 0 auto;
-            padding: 20px;
+            border-collapse: collapse;
+            background-color: #fff;
         }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            position: fixed; /* Fissa l'header */
-            top: 0;
-            width: 100%;
-            z-index: 1000; /* Assicura che l'header rimanga sopra il resto del contenuto */
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
         }
-        .container {
-            padding-top: 100px; /* Aggiunge spazio per evitare che il contenuto venga nascosto dall'header */
+        th {
+            background-color: #f2f2f2;
         }
-        
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        .wine-image {
-            width: 100%;
-            max-width: 500px;
-            margin: 20px 0;
-        }
-
-        .wine-details {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .wine-info {
-            flex: 1;
-        }
-
-        .wine-info h2 {
-            margin-top: 0;
-        }
-
-        .wine-info p {
-            line-height: 1.6;
-        }
-
-        .wine-specs {
-            background-color: #eee;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-
-        .wine-specs h3 {
-            margin-top: 0;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        tr:hover {
+            background-color: #f1f1f1;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>[Nome del Vino]</h1>
-    </header>
+    <h1>Valori Nutrizionali Vino 2</h1>
 
-    <div class="container">
-        <div class="wine-details">
-            <div class="wine-info">
-                <h2>Descrizione</h2>
-                <p>[Breve descrizione del vino, es. "Un vino rosso corposo con aromi di frutta matura e note speziate."]</p>
-                
-                <h2>Caratteristiche</h2>
-                <p>Annata: [Annata del vino]</p>
-                <p>Gradazione alcolica: [Gradazione]</p>
-                <p>Vitigni: [Tipi di vitigni utilizzati]</p>
-                <p>Zona di produzione: [Regione o area di produzione]</p>
-            </div>
-            <div class="wine-info">
-                <img class="wine-image" src="vino1-bottiglia.jpg" alt="[Nome del vino]">
-            </div>
-        </div>
-
-        <div class="wine-specs">
-            <h3>Scheda Tecnica</h3>
-            <ul>
-                <li>Temperatura di servizio: [Temperatura]</li>
-                <li>Abbinamenti consigliati: [Abbinamenti con cibi]</li>
-                <li>Affinamento: [Processo di affinamento, es. "In botti di rovere per 12 mesi"]</li>
-                <li>Formato: [Es. "Bottiglia 750 ml"]</li>
-            </ul>
-        </div>
-
-        <!-- Sezione Tenuta -->
-        <div class="estate-section">
-        <div class="section-content">
-            <div class="text">
-                <h2>La Tenuta</h2>
-                <p>[Descrizione della tenuta in cui è prodotto il vino, es. "La tenuta si estende su colline soleggiate e gode di un microclima ideale per la coltivazione di uve pregiate."]</p>
-            </div>
-            <div class="image">
-                <img src="[URL immagine tenuta]" alt="[Nome della tenuta]" class="section-image">
-            </div>
-        </div>
-        </div>
-    
-        <!-- Sezione Suolo e Regione -->
-        <div class="soil-region-section">
-        <div class="section-content reverse">
-            <div class="image">
-                <img src="tenuta.jpg" alt="[Descrizione suolo]" class="section-image">
-            </div>
-            <div class="text">
-                <h2>Suolo e Regione</h2>
-                <p>[Descrizione del suolo e della regione, es. "Il suolo è ricco di argilla e minerali, conferendo ai vini un carattere distintivo. La regione è nota per la produzione di vini di alta qualità."]</p>
-            </div>
-        </div>
-        </div>
-        
-    </div>
-
-    <footer>
-        <p>&copy; 2024 [Nome Azienda] - Tutti i diritti riservati.</p>
-    </footer>
+    <table>
+        <thead>
+            <tr>
+                <th>Proprietà</th>
+                <th>Valore per 100ml</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Energia</td>
+                <td>85 kcal</td>
+            </tr>
+            <tr>
+                <td>Carboidrati</td>
+                <td>0,9 g</td>
+            </tr>
+            <tr>
+                <td>Zuccheri</td>
+                <td>0,6 g</td>
+            </tr>
+            <tr>
+                <td>Proteine</td>
+                <td>0 g</td>
+            </tr>
+            <tr>
+                <td>Grassi</td>
+                <td>0 g</td>
+            </tr>
+            <tr>
+                <td>Sale</td>
+                <td>0 g</td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>
