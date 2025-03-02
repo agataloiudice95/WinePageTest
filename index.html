@@ -14,13 +14,14 @@
         }
         nav {
             width: 250px;
-            background-color: #333;
+            background-color: #222;
             padding: 20px;
             height: 100vh;
             position: fixed;
+            transition: transform 0.3s ease-in-out;
         }
         nav h2 {
-            color: #fff;
+            color: #d4af37;
             font-size: 24px;
             text-align: center;
             margin-bottom: 30px;
@@ -29,42 +30,85 @@
             display: block;
             color: #fff;
             text-decoration: none;
-            margin: 15px 0;
-            padding: 10px;
+            margin: 10px 0;
+            padding: 12px;
             background-color: #444;
             border-radius: 5px;
             text-align: center;
+            transition: 0.3s;
         }
         nav a:hover {
-            background-color: #555;
+            background-color: #d4af37;
+            color: #000;
         }
         main {
             margin-left: 270px;
             padding: 20px;
+            text-align: center;
         }
         h1 {
-            text-align: center;
             font-size: 36px;
             color: #d4af37;
+        }
+        .motivational {
+            font-size: 18px;
+            color: #ffcc00;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        /* Mobile-friendly */
+        .menu-btn {
+            display: none;
+            background-color: #d4af37;
+            color: #000;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            nav {
+                transform: translateX(-100%);
+                position: absolute;
+            }
+            nav.show {
+                transform: translateX(0);
+            }
+            .menu-btn {
+                display: block;
+            }
+            main {
+                margin-left: 0;
+            }
         }
     </style>
 </head>
 <body>
 
-    <nav>
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+
+    <nav id="sidebar">
         <h2>I Vini</h2>
         <a href="vino1.html">Vino 1</a>
         <a href="vino2.html">Vino 2</a>        
         <a href="vino3.html">Vino 3</a>
-        <!--
-        <a href="vino4.html">Vino 4</a>
-        -->
     </nav>
 
     <main>
         <h1>Benvenuti nella collezione dei nostri Vini</h1>
-        <p>Esplora la nostra selezione esclusiva di vini e scopri le caratteristiche di ognuno.</p>
+        
+        <p class="motivational">"Ogni grande impresa inizia con un piccolo passo. Continua a costruire il tuo sogno, un sorso alla volta!" 🍷✨</p>
     </main>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("show");
+        }
+    </script>
 
 </body>
 </html>
